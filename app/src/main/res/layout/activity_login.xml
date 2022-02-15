@@ -24,7 +24,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                app:srcCompat="@drawable/índice" />
+                app:srcCompat="@drawable/indice" />
 
             <TextView
                 android:id="@+id/textView"
@@ -42,7 +42,8 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome Back!" />
+            android:text="Welcome Back!"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/textView5"
@@ -52,7 +53,8 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -62,7 +64,8 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -71,6 +74,18 @@
                 android:password="true" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/signUpButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up" />
 
     </LinearLayout>
 
