@@ -5,17 +5,19 @@ public class Anime {
     String id;
     String name;
     String desc;
-    Type type;
-    String year;
+    String type;
+    int year;
     String image;
+    String favorite;
 
-    Anime(String id,String name,String desc,Type type,String year,String image){
+    Anime(String id,String name,String desc,String type,int year,String image,String favorite){
         this.id = id;
         this.name = name;
         this.desc = desc;
         this.type = type;
         this.year = year;
         this.image = image;
+        this.favorite = favorite;
     }
 
     public String getId() {
@@ -42,19 +44,27 @@ public class Anime {
         this.desc = desc;
     }
 
-    public Type getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(String type) {
         this.type = type;
     }
 
-    public String getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    public String getFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(String favorite) {
+        this.favorite = favorite;
+    }
+
+    public void setYear(int year) {
         this.year = year;
     }
 

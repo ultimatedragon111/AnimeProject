@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.animeproject">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +20,8 @@
         <activity
             android:name=".ui.login.LoginActivity2"
             android:exported="true"
-            android:label="@string/title_activity_login2" />
+            android:label="@string/title_activity_login2"
+            tools:ignore="MissingClass" />
         <activity
             android:name=".ListActivity"
             android:exported="true" />
